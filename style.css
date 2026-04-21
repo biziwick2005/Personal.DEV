@@ -736,3 +736,29 @@ footer {
   .hero-name { font-size:clamp(1.6rem,9vw,2.5rem); }
   .stats-grid { grid-template-columns:1fr; }
 }
+
+/* ── Add this new breakpoint for medium tablets (≤768px) ── */
+@media (max-width:768px) {
+  nav { padding:0 1.2rem; }
+  section { padding:3.5rem 1.2rem; }
+  
+  .skills-grid,
+  .projects-grid { 
+    grid-template-columns:1fr;
+    max-width:100%;
+    gap:1.5rem;
+  }
+
+  #hero { 
+    padding:calc(var(--nav-h) + 2.5rem) 1.2rem 3rem;
+    gap:2.5rem;
+  }
+
+  .photo-container { width:260px; height:340px; }
+  .photo-ring:nth-child(1) { width:300px; height:300px; }
+  .photo-ring:nth-child(2) { width:350px; height:350px; }
+  .photo-ring:nth-child(3) { width:400px; height:400px; }
+
+  .contact-email { font-size:clamp(.9rem,2.5vw,1.3rem); }
+  .hero-name { font-size:clamp(1.9rem,5.5vw,3.5rem); }
+}
